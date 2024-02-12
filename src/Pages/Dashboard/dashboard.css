@@ -1,0 +1,121 @@
+/* Global */
+.content-flex{
+    display: flex;
+}
+.fa-solid{
+    color: #1E3050;
+    margin-right: 10px;
+}
+:root {
+    --main-color:#6F9A61;
+    --greenTrans-color: rgba(111,154,97,70%);
+    --lightGreen-color:#D5DED2;
+    --grey-color: #333333;
+    --main-transition:0.3s;
+  }
+/* Top Bar */
+.btngo{
+    outline: none;
+    border: none;
+    padding: 7px 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 32px;
+    background-color: var( --main-color);
+    margin-top: 10px;
+    text-decoration: none;
+    margin-right: 90px;
+
+}
+/* side bar  */
+.side-bar{
+    top: 0px;
+    margin-top: 0;
+    border-right: 1px solid var(--lightGreen-color);
+    height: 100vh;
+    padding: 10px;
+}
+
+.item-link{
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    transition: 0.1s;
+}
+.item-link:hover{
+    background-color: var(--main-color);
+    border-radius: 12px;
+}
+.active{
+    background-color: var(--greenTrans-color) ;
+    border-radius: 12px;
+    color: white;
+}
+.active i{
+    color: white;
+}
+/* Table */
+table{
+    border-collapse:collapse ;
+    width: 100%;
+    table-layout: fixed;
+}
+tr:nth-child(even){
+    background: #D5DED2;
+}
+th,
+td{
+    border: 1px solid rgba(111,154,97,90%);
+    padding:0.75rem ;
+    text-align: center;
+}
+th{
+    background: rgba(111,154,97,80%);
+    color: #fff;
+}
+td{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btnpost{
+    background-color:var(--main-color) !important ;
+    border: none;
+    color: white;
+    border-radius:15px ;
+    padding: 5px;
+}
+/* Dashbiard */
+/* Dashboard */
+.bg-gray{
+    background-color: rgba(111, 154, 97, 80%) !important;
+    margin-top: 10px;
+}
+.bgcolor:active {
+    background-color: gainsboro;
+    color: black;
+}
+
+.bg-color {
+    background-color: rgba(111, 154, 97, 80%) !important;
+}
+.button-color{
+    background-color: rgba(111, 154, 97) !important;
+    border-radius: 32px;
+}
+.mt{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.desdash{
+    align-items: flex-start;
+  
+
+}
+/*End Dashboard */

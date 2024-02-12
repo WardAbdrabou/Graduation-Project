@@ -1,0 +1,104 @@
+
+/* Global css */
+.shadow{
+    box-shadow: 1px  1px 10px 1px  #cbc9c9;
+
+}
+:root {
+    --main-color:#6F9A61;
+    --greenTrans-color: rgba(111,154,97,70%);
+    --lightGreen-color:#D5DED2;
+    --grey-color: #333333;
+    --main-transition:0.3s;
+  }
+/* SignUp */
+.parent{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 5px;
+    height: 88.8vh; 
+    background-image: url(../assests/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+} 
+input {
+    padding: 10px 20px;
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(102,102,102 , 35%);
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+}
+label{
+    margin-bottom: 5px;
+}
+input:focus{
+    border: 1px solid #6F9A61;
+}
+input::placeholder{
+    color: rgba(0,0,0,0.3);
+}
+.register{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 40px;
+}
+.register button , .register-nav {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    border-radius: 32px;
+    background-color: var( --main-color);
+    margin-top: 10px;
+    text-decoration: none;
+}
+.register-nav {
+    margin-top: 10px;
+    margin-left: 5px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: var( --main-color);
+    padding: 5px 10px;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    border-radius: 32px;
+}
+.register button:hover , .register-nav:hover{
+    background-color: white;
+    border: 1px solid var( --main-color);
+    color: #6F9A61;
+}
+.error{
+    color: red;
+    font-size: 14px;
+    margin-top: 0;
+}
+.pAcount{
+    color: var(--grey-color);
+    font-size: 14px;
+    margin-top: 0;
+
+}
+.login{
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    height:80vh;
+}

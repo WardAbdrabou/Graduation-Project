@@ -1,0 +1,405 @@
+.cont{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small */
+@media(min-width:768px){
+    .container{
+        width: 750px;
+    } 
+}
+/* Medium */
+@media(min-width:992px){
+    .container{
+        width: 970px;
+    } 
+}
+/* Large */
+@media(min-width:1200px){
+    .container{
+        width: 1170px;
+    } 
+}
+.main-title{
+    margin: 20px auto 10px;
+    padding: 10px 10px;
+    font-size: 72px;
+    width: fit-content;
+    position: relative;
+    color: var(--main-color);
+    font-weight: bold;
+}
+.main-titlep{
+    margin: 0 auto 100px;
+    font-size: 20px;
+    width: fit-content;
+    position: relative;
+
+}
+@media(max-width:768px){
+    .main-title{
+       font-size: 40px;
+    } 
+    .main-titlep{
+        font-size: 16px;
+
+    }
+}
+
+/* End Global Rule */
+
+/* Card Plant Diseases , Suitable Plant */
+.cards{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;   
+}
+.cards .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 40px;
+
+}
+.cards .catogries{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.cards .box{
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: white;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    overflow: hidden;
+    transition: transform var(--main-transition) , box-shadow var(--main-transition);
+}
+.cards .box:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+.cards .box img{
+    /* max-width: 100%; */
+    width: 400px;
+    height: 200px;
+
+}
+.cards .box .content{
+    padding: 20px;
+}
+.cards .box .content h3{
+    margin: 0;
+}
+
+.cards .box .content p{
+    margin:  10px 0 0 ;
+    line-height: 1.5;
+    color: #777;
+
+}
+.cards .box .info{
+    padding: 20px ;
+    border-top:  1px solid #e6e6e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards .box .info a{
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.cards .box .info i{
+    color: var(--main-color);
+
+}
+.cards .box:hover .info i{
+    animation: moving-arrow 0.6s linear infinite;
+}
+
+@keyframes moving-arrow{
+    100%{
+        transform: translateX(10px);
+    }
+} 
+/* Card Plant Diseases , Suitable Plant */
+/* Start Team Consltation */
+.team{
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;  
+}
+.team .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+    gap: 40px;
+}
+.team .box{
+    position: relative;
+}
+.team .box::before ,.team .box::after {
+    content: "";
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 10px;
+    transition: var(--main-transition);
+}
+.team .box::before{
+    z-index: -2;
+    width: calc(100% - 60px);
+
+}
+.team .box::after{
+    z-index: -1;
+    background-color: #e4e4e4;
+    width: 0;
+
+}
+.team .box:hover:after{
+    width: calc(100% - 60px);
+}
+.team .box .data{
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+}
+.team .box .data img{
+    width: calc(100% - 60px);
+    height: 200px;
+    transition: var(--main-transition);
+    border-radius: 10px;
+}
+.team .box:hover img{
+    filter: grayscale(100%);
+}
+.team .box .data .social{
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px;  
+}
+.team .box .data .social a{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.team .box .data .social a:hover i{
+    color: #2196F3;
+}
+.team .box .data .social i{
+    color: #777;
+    transition: var(--main-transition);
+}
+.team .box .info{
+    padding-left: 80px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.team .box .info h3{
+    margin-top: 10px;
+    margin-bottom: 0 ;
+    font-size: 22px;
+    transition: var(--main-transition);
+}
+.team .box .info p{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.team .box:hover h3{
+    color: #777;
+}
+/* End Team Consltation  */
+/* Suitable plant page */
+.btn-catog{
+    background-color: var(--main-color);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    width: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+.btn-catog:focus{
+    background-color: var(--greenTrans-color);
+    color: white;
+}
+.search{
+    width: 940px;
+    margin-left: 300px;
+    border-radius: 50px;
+    margin-bottom: 60px;
+}
+@media(max-width:768px){
+    .catogries{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .btn-catog{
+        margin: 3px;
+    }
+    .limitnumbersuitable{
+        margin-bottom: 30px;
+    }
+    .search{
+        width: 400px;
+        margin-left: 45px;
+        margin-bottom: 50px;
+    }
+  }
+  .limitnumberh{
+    color: var(--main-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* number of lines to show */
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .limitnumbersuitable{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .limitnumber{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  /* Plant Detials And Diseases */
+  .plantDetDes{
+    font-size: 64px;
+    margin: 20px auto 10px;
+    padding: 10px 10px;
+    width: fit-content;
+    position: relative;
+  
+  }
+  .plantDetDessec{
+    font-size: 36px;
+    margin: 20px auto 30px;
+    padding: 10px 10px;
+    width: fit-content;
+    position: relative;
+    font-weight: bold;
+  }
+  /* Plant Detials And Diseases */
+/*Start Plant Details */
+
+.imgplantdetial {
+    width: 600px;
+    height: 500px;
+    border-radius: 25px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+.plantd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentplant{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.btn-detail{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: var(--main-color);
+    cursor: pointer;
+}
+/* End Plant Details */
+/* start Contact */
+.contact{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+  }
+  .contact .headerContact{
+    margin: 20px 10% 20px 55%;
+  }
+  .contact .contact-titlep{
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-basis: 50%;
+  
+  
+  }
+  .contact .content{
+    display: flex;
+    justify-content: space-between;
+  }
+  @media(max-width:767px){
+    .contact .content{
+        flex-direction: column;
+    }
+  }
+  .contact .content form{
+    flex-basis: 60%;
+  }
+  .contact .content form .main-input{
+    padding: 20px ;
+    display: block;
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    width: 789px;
+    height: 56px;
+  }
+  .contact .content form .main-input:focus , textarea:focus{
+    border: 1px solid var(--main-color);
+  }
+  .contact .content form textarea.main-input{
+    height: 200px;
+    outline: none;
+  }
+  .contact .content form input[type="submit"]{
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact .content .info{
+    margin: 0 0 0 -5%;
+    border-radius: 15px;
+    flex-basis: 40%;
+    background-image: url(../assests/contact.jpg);
+  }
+  @media(max-width:767px){
+    .contact .content .info{
+        order: -1;
+        text-align: center;
+    }
+  }
+  /* End Contact */
